@@ -86,3 +86,8 @@ media queries for all devices
   }
   
   
+///////////////////////////boot strap grid system ///////////////////////
+
+ class="col-xl-3 col-lg-4 col-sm-6"
+  
+  for 4-3-2-1 Grid System
