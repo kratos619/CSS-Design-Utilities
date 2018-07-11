@@ -91,3 +91,13 @@ media queries for all devices
  class="col-xl-3 col-lg-4 col-sm-6"
   
   for 4-3-2-1 Grid System
+  
+  /******* Important Links***************/
+
+FOR TOOL TIPS
+  
+  http://izitoast.marcelodolce.com/
+
+FOR MODALS
+
+  http://izimodal.marcelodolce.com/
