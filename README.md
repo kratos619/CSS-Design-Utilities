@@ -101,3 +101,10 @@ FOR TOOL TIPS
 FOR MODALS
 
   http://izimodal.marcelodolce.com/
+
+SVG AND ICONS 
+http://www.linea.io/
+
+
+
+
