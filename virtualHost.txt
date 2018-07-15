@@ -1,0 +1,19 @@
+set virtual host to apache example
+path name C:\xampp\apache\conf\extra
+
+<VirtualHost *:80>
+DocumentRoot "C:/xampp/htdocs"
+ServerName localhost
+</VirtualHost>
+
+<VirtualHost *:80>
+DocumentRoot "C:/xampp/htdocs/LaravelForms/blog/public"
+ServerName cms.com
+</VirtualHost>
+
+set windows configurations
+C:\Windows\System32\drivers\etc
+127.0.0.1       localhost
+127.0.0.1       cms.com
+
+
