@@ -1,0 +1,114 @@
+1) create RESTFULL API
+example by using db create arrays of object
+<?php
+//important to allow access controll
+header('Access-Control-Allow-Origin: http://localhost:4200');
+header('Content-type: application/json');
+
+$con = new mysqli("localhost","root","","angular_php");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }else{
+//echo "ecnnect";
+}
+
+
+$return_arr = array();
+
+$query = "select * from post";
+
+$fetch = mysqli_query($con,$query);
+while ($row = mysqli_fetch_array($fetch)) {
+    $row_array['id'] = $row['id'];
+    $row_array['user_id'] = $row['user_id'];
+    $row_array['title'] = $row['title'];
+$row_array['body'] = $row['body'];
+
+    array_push($return_arr,$row_array);
+}
+
+echo json_encode($return_arr);
+ ?>
+/******************************************** PHP END **********************/
+
+// angular file
+create interface to handle data type
+example interface file
+
+export interface Blog {
+  id;
+  user_id;
+  title;
+  body;
+}
+
+2) in app.componant.ts
+import file and create data service in constructor
+
+example
+
+import { DataService } from './services/data.service';
+import { Blog } from './Blog';
+
+//data typeset to type interface
+  post: Blog;
+
+  constructor(private mydata: DataService) {
+    this.mydata.getPost().subscribe((post: Blog) => (this.post = post));
+  }
+
+
+3) create file called Data Services
+example data.service.ts
+
+import { Injectable } from '@angular/core';
+// important use HttpClient from @angular/common/http this is new in angular  
+import { HttpClient } from '@angular/common/http';
+
+//import Observable from rxjs/Observable
+import { Observable } from 'rxjs/Observable';
+import { Blog } from '../Blog';
+
+
+@Injectable()
+export class DataService {
+  constructor(public http: HttpClient) {
+    console.log('im data services');
+  }
+  
+  
+// getpost is use to get post s
+  getPost(): Observable<Blog> {
+    return this.http.get<Blog>(
+      'http://localhost/Angular-php-dentaltourismonline/api.php'
+    );
+  }
+}
+
+
+
+4) in app.module.ts file lode some file import and providers
+// httmclient module to for client module work
+import { HttpClientModule } from '@angular/common/http';
+//important to include data services 
+import { DataService } from './services/data.service';
+
+
+@NgModule({
+  declarations: [AppComponent],
+// import HttpClientModule in imports:[] this area
+imports: [BrowserModule, FormsModule, HttpModule, HttpClientModule],
+
+//important add Dataservice , httpclientmodules in order to use service and httpclientmodules
+  providers: [DataService, HttpClientModule, HttpModule],
+  bootstrap: [AppComponent]
+})
+
+
+
+
+
+
+
