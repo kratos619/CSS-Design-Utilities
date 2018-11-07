@@ -108,7 +108,33 @@ imports: [BrowserModule, FormsModule, HttpModule, HttpClientModule],
 
 
 
+// ////////////////////////////////////post data add new data////////////////
 
+//dataserveice.ts
+  addUser(user) {
+    return this.http
+      .post('http://slimblog.api/api/posts/add', user)
+      .map(res => res.json());
+  }
+// appcomponanat.ts
+
+  post = {
+    id: '',
+    title: '',
+    cat_id: '',
+    body: ''
+  };
+
+<form (submit)="onSubmit()">
+//code
+</form>
+
+
+  onSubmit() {
+    this.dataservices.addUser(this.post).subscribe(post => {
+      console.log(post);
+    });
+  }
 
 
 
