@@ -1,0 +1,14 @@
+{
+  "name": "my_portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node_sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Gaurav Palaspagar",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
