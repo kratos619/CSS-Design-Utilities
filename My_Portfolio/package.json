@@ -4,7 +4,7 @@
   "description": "My Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node_sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
   },
   "author": "Gaurav Palaspagar",
   "license": "ISC",
