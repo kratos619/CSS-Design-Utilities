@@ -3,3 +3,5 @@ My_Portfolio/node_modules/
 node_modules
 My_Portfolio/node_modules
 *.log
+*.map
+*.map
