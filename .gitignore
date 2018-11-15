@@ -5,3 +5,7 @@ My_Portfolio/node_modules
 *.log
 *.map
 *.map
+*.map
+My_Portfolio/dist/css/main.css/main.map
+*.map
+My_Portfolio/dist/css/main.css/main.map
