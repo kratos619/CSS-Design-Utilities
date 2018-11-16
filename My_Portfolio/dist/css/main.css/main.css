@@ -42,7 +42,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.9;
   visibility: hidden;
 }
 
@@ -99,46 +99,51 @@
   border: solid 3px #eece1a;
 }
 
-/* line 108, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 109, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-in-out;
 }
 
-/* line 113, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 114, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 118, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 119, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-link {
   display: inline-block;
   position: relative;
-  font-size: 30px;
+  font-size: 50px;
   text-transform: uppercase;
   padding: 1rem 0;
-  font-weight: 300;
+  font-weight: 500;
   color: #fff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
 
-/* line 129, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 130, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-link:hover {
   color: #eece1a;
 }
 
-/* line 137, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 134, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+.menu .nav-link .current {
+  color: #eece1a;
+}
+
+/* line 142, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .nav-item:nth-child(1) {
   transition-delay: 0.1s;
 }
 
-/* line 137, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 142, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .nav-item:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* line 137, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 142, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .nav-item:nth-child(3) {
   transition-delay: 0.3s;
 }
@@ -150,7 +155,7 @@
 
 /* line 8, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   height: 100%;
   margin: 0;
@@ -176,20 +181,20 @@ body#bg-img:after {
   background-color: rgba(68, 68, 68, 0.9);
 }
 
-/* line 17, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 18, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 h1,
 h2 {
   margin: 0;
   font-weight: 400;
 }
 
-/* line 22, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 23, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 h1.lg-heading,
 h2.lg-heading {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
-/* line 26, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 27, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 h1.sm-heading,
 h2.sm-heading {
   margin-bottom: 2rem;
@@ -197,57 +202,57 @@ h2.sm-heading {
   background: #494949;
 }
 
-/* line 33, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 34, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 a {
   color: white;
   text-decoration: none;
 }
 
-/* line 38, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 39, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 header {
   position: fixed;
   z-index: 2;
   width: 100%;
 }
 
-/* line 44, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 45, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .text-secondary {
   color: #eece1a;
 }
 
-/* line 48, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 49, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px);
 }
 
-/* line 52, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 53, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 main .icons {
   margin-top: 1rem;
 }
 
-/* line 55, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 56, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 main .icons a {
   padding: 0.4rem;
 }
 
-/* line 58, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 59, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 main .icons a:hover {
   color: #eece1a;
   transition: all 0.5s ease-in-out;
 }
 
-/* line 65, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 66, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 main#home {
   overflow: hidden;
 }
 
-/* line 68, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 69, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 main#home h1 {
   margin-top: 20vh;
 }
 
-/* line 75, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 76, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -255,7 +260,7 @@ main#home h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* line 83, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 84, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .bio-img {
   grid-area: bioimg;
   margin: auto;
@@ -263,55 +268,55 @@ main#home h1 {
   border: #eece1a 3px solid;
 }
 
-/* line 90, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 91, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem;
 }
 
-/* line 95, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 96, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-1 {
   grid-area: job1;
 }
 
-/* line 99, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 100, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-2 {
   grid-area: job2;
 }
 
-/* line 103, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 104, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-3 {
   grid-area: job3;
 }
 
-/* line 107, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 108, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
 }
 
-/* line 115, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 116, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-/* line 121, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 122, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects img {
   width: 100%;
   border: 3px solid #fff;
 }
 
-/* line 125, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 126, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects img:hover {
   opacity: 0.5;
   border-color: #eece1a;
   transition: all 0.5s ease-in-out;
 }
 
-/* line 133, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 134, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects .btn, .projects .btn-dark, .projects .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -319,13 +324,13 @@ main#home h1 {
   margin-bottom: 0.3rem;
 }
 
-/* line 139, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 140, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects .btn:hover, .projects .btn-dark:hover, .projects .btn-light:hover {
   background: #eece1a;
   color: #000;
 }
 
-/* line 151, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 152, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -334,7 +339,7 @@ main#home h1 {
   margin-top: 1rem;
 }
 
-/* line 158, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 159, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div {
   font-size: 2rem;
   border: 3px #fff solid;
@@ -343,36 +348,36 @@ main#home h1 {
   transition: all 0.5s ease-in-out;
 }
 
-/* line 165, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 166, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
   background-color: #eece1a;
   color: #000;
 }
 
-/* line 170, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 171, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div:hover span {
   color: #000;
 }
 
-/* line 175, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 176, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div article {
   text-align: center;
 }
 
-/* line 181, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 182, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff;
 }
 
-/* line 187, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 188, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .btn-light {
   background: #c4c4c4;
   color: #333;
 }
 
-/* line 193, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 194, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;

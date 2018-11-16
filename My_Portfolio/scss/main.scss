@@ -7,7 +7,8 @@
 
 body {
     @include background;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto',
+        sans-serif;
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -20,7 +21,7 @@ h2 {
     font-weight: 400;
 
     &.lg-heading {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     &.sm-heading {
