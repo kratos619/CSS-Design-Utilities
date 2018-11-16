@@ -13,7 +13,7 @@
   width: 28px;
   height: 3px;
   margin-bottom: 5px;
-  background: white;
+  background: #fff;
   transition: all 0.5s ease-in-out;
 }
 
@@ -118,7 +118,7 @@
   text-transform: uppercase;
   padding: 1rem 0;
   font-weight: 300;
-  color: white;
+  color: #fff;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -195,7 +195,7 @@
 /* line 9, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: #fff;
   height: 100%;
   margin: 0;
   background-color: #444;
