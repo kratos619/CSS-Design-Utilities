@@ -71,8 +71,7 @@ main {
     }
 }
 
-
-// create grid system 
+// create grid system
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -91,7 +90,6 @@ main {
     .bio {
         grid-area: bio;
         font-size: 1.5rem;
-
     }
 
     .job-1 {
@@ -113,14 +111,60 @@ main {
     }
 }
 
+// project area
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+
+    img {
+        width: 100%;
+        border: 3px solid #fff;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+
+        }
+    }
+
+    .btn {
+        display: block;
+        padding: 0.5rem 1rem;
+        border: 0;
+        margin-bottom: 0.3rem;
+
+        &:hover {
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+
+        }
+
+    }
+
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: #fff;
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: #333;
+}
+
 #main-footer {
     text-align: center;
     padding: 1rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
     height: 60px;
-
 }
 
-// media querys 
+// media querys
 @import 'mobile';

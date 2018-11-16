@@ -247,7 +247,7 @@ main#home h1 {
   margin-top: 20vh;
 }
 
-/* line 76, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 75, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -255,7 +255,7 @@ main#home h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-/* line 84, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 83, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .bio-img {
   grid-area: bioimg;
   margin: auto;
@@ -263,35 +263,81 @@ main#home h1 {
   border: #eece1a 3px solid;
 }
 
-/* line 91, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 90, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .bio {
   grid-area: bio;
   font-size: 1.5rem;
 }
 
-/* line 97, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 95, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-1 {
   grid-area: job1;
 }
 
-/* line 101, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 99, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-2 {
   grid-area: job2;
 }
 
-/* line 105, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 103, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job-3 {
   grid-area: job3;
 }
 
-/* line 109, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 107, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
 }
 
-/* line 116, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 115, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* line 121, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.projects img {
+  width: 100%;
+  border: 3px solid #fff;
+}
+
+/* line 125, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.projects img:hover {
+  opacity: 0.5;
+  border-color: #eece1a;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 133, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.projects .btn, .projects .btn-dark, .projects .btn-light {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+}
+
+/* line 139, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.projects .btn:hover, .projects .btn-dark:hover, .projects .btn-light:hover {
+  background: #eece1a;
+  color: #000;
+}
+
+/* line 149, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.btn-dark {
+  background: black;
+  color: #fff;
+}
+
+/* line 155, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.btn-light {
+  background: #c4c4c4;
+  color: #333;
+}
+
+/* line 161, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -300,52 +346,74 @@ main#home h1 {
   height: 60px;
 }
 
+@media screen and (min-width: 1171px) {
+  /* line 3, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  /* line 11, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media screen and (max-width: 768px) {
-  /* line 9, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 19, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   main {
     align-items: center;
     text-align: center;
   }
-  /* line 14, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 24, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   ul.menu-nav,
   div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0;
   }
-  /* line 20, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 30, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   ul.menu-nav.show,
   div.menu-branding.show {
     transform: translate3d(0, 0, 0);
   }
-  /* line 25, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 35, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   .menu-nav {
     height: 75vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px;
   }
-  /* line 31, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 41, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   .menu-branding {
     height: 30vh;
     transform: translate3d(100%, 0, 0);
   }
-  /* line 35, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 45, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   .menu-branding .portrait {
     background: url("../../img/portrait_small.jpg");
     width: 150px;
     height: 150px;
   }
-  /* line 42, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 52, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   .about-info {
     grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr;
   }
+  /* line 62, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 500px) {
-  /* line 55, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 70, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   main#home h1 {
     margin-top: 10vh;
+  }
+  /* line 74, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
