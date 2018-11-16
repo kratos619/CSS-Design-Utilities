@@ -94,23 +94,26 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../../img/portrait.jpg");
+  background: url("../../img/26537566.jpg");
   border-radius: 50%;
   border: solid 3px #eece1a;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/* line 109, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 112, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
   transition: all 0.5s ease-in-out;
 }
 
-/* line 114, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 117, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 119, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 122, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-link {
   display: inline-block;
   position: relative;
@@ -123,27 +126,27 @@
   transition: all 0.5s ease-in-out;
 }
 
-/* line 130, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 133, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-link:hover {
   color: #eece1a;
 }
 
-/* line 134, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 137, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .menu .nav-link .current {
   color: #eece1a;
 }
 
-/* line 142, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 145, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .nav-item:nth-child(1) {
   transition-delay: 0.1s;
 }
 
-/* line 142, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 145, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .nav-item:nth-child(2) {
   transition-delay: 0.2s;
 }
 
-/* line 142, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
+/* line 145, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_menu.scss */
 .nav-item:nth-child(3) {
   transition-delay: 0.3s;
 }
@@ -289,34 +292,46 @@ main#home h1 {
   grid-area: job3;
 }
 
-/* line 108, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 107, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.about-info .job-3 .resume-btn {
+  margin: 0;
+  margin-top: 3px;
+  display: inline;
+  width: 60px;
+  height: 50px;
+  border: #eece1a solid 6px;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 120, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .about-info .job {
   background: #515151;
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid;
 }
 
-/* line 116, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 128, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-/* line 122, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 134, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects img {
   width: 100%;
   border: 3px solid #fff;
 }
 
-/* line 126, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 138, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects img:hover {
   opacity: 0.5;
   border-color: #eece1a;
   transition: all 0.5s ease-in-out;
 }
 
-/* line 134, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 146, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects .btn, .projects .btn-dark, .projects .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -324,13 +339,13 @@ main#home h1 {
   margin-bottom: 0.3rem;
 }
 
-/* line 140, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 152, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .projects .btn:hover, .projects .btn-dark:hover, .projects .btn-light:hover {
   background: #eece1a;
   color: #000;
 }
 
-/* line 152, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 164, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -339,7 +354,7 @@ main#home h1 {
   margin-top: 1rem;
 }
 
-/* line 159, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 171, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div {
   font-size: 2rem;
   border: 3px #fff solid;
@@ -348,42 +363,42 @@ main#home h1 {
   transition: all 0.5s ease-in-out;
 }
 
-/* line 166, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 178, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
   background-color: #eece1a;
   color: #000;
 }
 
-/* line 171, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 183, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div:hover span {
   color: #000;
 }
 
-/* line 176, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 188, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .boxes div article {
   text-align: center;
 }
 
-/* line 182, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 194, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff;
 }
 
-/* line 188, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 200, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .btn-light {
   background: #c4c4c4;
   color: #333;
 }
 
-/* line 194, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 206, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 #main-footer {
   text-align: center;
-  padding: 1rem;
+  padding: 4rem;
   background: #2b2b2b;
   color: #fff;
-  height: 60px;
+  height: 90px;
 }
 
 @media screen and (min-width: 1171px) {

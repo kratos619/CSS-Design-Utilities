@@ -103,6 +103,18 @@ main {
 
     .job-3 {
         grid-area: job3;
+
+        .resume-btn {
+            margin: 0;
+            margin-top: 3px;
+            display: inline;
+            width: 60px;
+            height: 50px;
+            border: $secondary-color solid 6px;
+            padding: 15px;
+            @include easeOut;
+
+        }
     }
 
     .job {
@@ -193,10 +205,10 @@ main {
 
 #main-footer {
     text-align: center;
-    padding: 1rem;
+    padding: 4rem;
     background: darken($primary-color, 10);
     color: set-text-color($primary-color);
-    height: 60px;
+    height: 90px;
 }
 
 
