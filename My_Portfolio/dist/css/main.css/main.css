@@ -325,19 +325,54 @@ main#home h1 {
   color: #000;
 }
 
-/* line 149, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 151, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* line 158, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 165, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.boxes div:hover {
+  padding: 0.5rem 1.5rem;
+  background-color: #eece1a;
+  color: #000;
+}
+
+/* line 170, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.boxes div:hover span {
+  color: #000;
+}
+
+/* line 175, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+.boxes div article {
+  text-align: center;
+}
+
+/* line 181, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .btn-dark {
   background: black;
   color: #fff;
 }
 
-/* line 155, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 187, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 .btn-light {
   background: #c4c4c4;
   color: #333;
 }
 
-/* line 161, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
+/* line 193, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/main.scss */
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -404,14 +439,18 @@ main#home h1 {
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  /* line 68, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  .boxes div {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
-  /* line 70, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 76, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   main#home h1 {
     margin-top: 10vh;
   }
-  /* line 74, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
+  /* line 80, C:/xampp/htdocs/CSS-Design-Utilities/My_Portfolio/scss/_mobile.scss */
   .projects {
     grid-template-columns: repeat(1, 1fr);
   }
