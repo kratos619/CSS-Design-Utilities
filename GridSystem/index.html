@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+
+        .wrapper>div {
+            background-color: red;
+        }
+
+        .wrapper>div :nth-child(odd) {
+            background: blue;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum! Porro distinctio, rem delectus
+            ipsa molestiae quidem beatae aperiam, tenetur labore nihil nisi at amet impedit similique commodi
+            asperiores autem officia adipisci esse! Ratione laborum, vero fugit voluptatibus molestias a quod ut
+            nostrum est architecto temporibus veritatis, doloremque delectus expedita autem ipsam labore ipsum in!
+            Illum obcaecati molestias placeat. Reprehenderit pariatur totam assumenda incidunt ab, suscipit, fugit
+            excepturi voluptatibus veritatis, quia perferendis. Aliquam, quam adipisci hic accusamus quas nam tempora.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia ipsam architecto unde! Illum ex
+            consequuntur atque dolorum officia odio cumque, velit fugit laborum, ipsa aut voluptatibus animi suscipit
+            sint.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, rerum! Porro distinctio, rem delectus
+            ipsa molestiae quidem beatae aperiam, tenetur labore nihil nisi at amet impedit similique commodi
+            asperiores autem officia adipisci esse! Ratione laborum, vero fugit voluptatibus molestias a quod ut
+            nostrum est architecto temporibus veritatis, doloremque delectus expedita autem ipsam labore ipsum in!
+            Illum obcaecati molestias placeat. Reprehenderit pariatur totam assumenda incidunt ab, suscipit, fugit
+            excepturi voluptatibus veritatis, quia perferendis. Aliquam, quam adipisci hic accusamus quas nam tempora.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt officia ipsam architecto unde! Illum ex
+            consequuntur atque dolorum officia odio cumque, velit fugit laborum, ipsa aut voluptatibus animi suscipit
+            sint.
+        </div>
+    </div>
+</body>
+
+</html>
