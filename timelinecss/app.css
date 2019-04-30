@@ -1,0 +1,110 @@
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400i');
+
+ .timeline {
+     font-family: 'Montserrat', sans-serif;
+     position: relative;
+     margin: 50px auto;
+     padding: 40px 0;
+ }
+
+ .timeline:before {
+     content: '';
+     position: absolute;
+     left: 50%;
+     width: 2px;
+     height: 100%;
+     background: #c5c5c5;
+ }
+
+ .timeline ul {
+     margin: 0;
+     padding: 0;
+ }
+
+ .timeline ul li {
+     list-style: none;
+     line-height: normal;
+     position: relative;
+     width: 50%;
+     padding: 20px 40px;
+     box-sizing: border-box;
+ }
+
+ .timeline ul li:nth-child(odd) {
+     float: left;
+     clear: both;
+     text-align: right;
+ }
+
+ .timeline ul li:nth-child(even) {
+     float: right;
+     clear: both;
+     text-align: left;
+ }
+
+ .content {
+     padding-bottom: 20px;
+ }
+
+ .timeline ul li:nth-child(odd):before {
+     content: '';
+     position: absolute;
+     top: 24px;
+     width: 10px;
+     right: -6px;
+     height: 10px;
+     background: rgba(233, 33, 99, 1);
+     border-radius: 50%;
+     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+ }
+
+ .timeline ul li:nth-child(even):before {
+     content: '';
+     position: absolute;
+     top: 24px;
+     width: 10px;
+     left: -4px;
+     height: 10px;
+     background: rgba(233, 33, 99, 1);
+     border-radius: 50%;
+     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+ }
+
+ .timeline ul li .content h3 {
+     margin: 0;
+     padding: 0;
+     font-weight: 600;
+ }
+
+ .timeline ul li .time h3 {
+     margin: 0;
+     padding: 0;
+     font-size: 14px;
+ }
+
+ .timeline ul li p {
+     margin: 10px 0 0;
+     padding: 0;
+ }
+
+ .timeline ul li:nth-child(odd) .time {
+     position: absolute;
+     top: 12px;
+     right: -165px;
+     margin: 0;
+     padding: 8px 16px;
+     background: rgba(233, 33, 99, 1);
+     border-radius: 18px;
+     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+ }
+
+ .timeline ul li:nth-child(even) .time {
+     position: absolute;
+     top: 12px;
+     left: -165px;
+     margin: 0;
+     padding: 8px 16px;
+     background: rgba(233, 33, 99, 1);
+     border-radius: 18px;
+     box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.3);
+ }
