@@ -5,6 +5,7 @@ Code Snippets of Media Query and Usefull Links
 ### Media Queries all Devices
 
 ```
+//https://www.jqueryscript.net/demo/Material-Time-Picker-Plugin-jQuery-MDTimePicker/
 /* ##Device = Desktops ##Screen = 1281px to higher resolution desktops */
 
 @media (min-width: 1281px) {
